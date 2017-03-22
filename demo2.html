@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jquery 标签</title>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript"> 
+/**
+ * 标签选择器写法 $("标签")  会取到所有的标签  如果查找指定位置
+   可以用 方法 eq(索引) 注意 索引从0开始  
+ */
+$(function(){　
+	$("div").eq(1).hide();
+	$("div:first").click(function(){ 
+		$(this).hide(); 
+		$("div").eq(1).show();
+	}); 
+	
+ });
+</script>
+</head>
+<body>
+<div>你是老王吗？ 不是请点我</div>
+<div>我不是老王</div>
+</body>
+</html>
