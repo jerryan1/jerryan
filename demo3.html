@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jquery类选择器</title>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript"> 
+/**
+ * 标签选择器写法 $(".类选择器名次") 在对于的标签里加入class="类名"即可
+   可以用 方法 eq(索引) 注意 索引从0开始  
+ */
+$(function(){　
+	$(".dv").eq(0).click(function(){ 
+		$(this).hide(); 
+	}); 
+	
+ });
+</script>
+</head>
+<body>
+<div class="dv">点我，我就走</div>
+<div class="dv">再点我，我还走</div>
+<div class="dv">不点我，我更走</div>
+</body>
+</html>

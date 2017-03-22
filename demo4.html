@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jquery 组合选择器 在$("选择器,选择器,...")</title>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript"> 
+/**
+ * 标签选择器写法 $("标签")  会取到所有的标签  如果查找指定位置
+   可以用 方法 eq(索引) 注意 索引从0开始  
+ */
+$(function(){　
+	$(".dv,#div1,#div2").click(function(){ 
+		$(this).hide(); 
+	}); 
+	
+ });
+</script>
+</head>
+<body>
+<div id="div1">点我，我就走</div>
+<div id="div2">再点我，我还走</div>
+<div class="dv">不点我，我更走</div>
+</body>
+</html>

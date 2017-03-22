@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jquery 隔行变色 选中加强</title>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript"> 
+/**
+ * :even 获取偶数索引。0开始
+ */
+$(function(){　
+	$("tr:even").css({background: "grey" });
+	$("tr").mouseover(function(){
+		  $(this).css("background-color","yellow");
+		});
+	$("tr").mouseout(function(){	
+		if(this.rowIndex%2==0){
+			$(this).css("background-color","grey");
+		}else{
+			$(this).css("background-color","white");	
+		}
+		   
+		});
+ });
+</script>
+</head>
+<body>
+<table style="border:1px solid #F00;">
+  <tr><td>张三</td><td>王武</td><td>赵柳</td></tr>
+  <tr><td>去你</td><td>好人</td><td>坏人</td></tr>
+  <tr><td>不着调</td><td>表脸</td><td>不要脸</td></tr>
+  <tr><td>表脸</td><td>表脸</td><td>表脸</td></tr>
+  <tr><td>表脸</td><td>表脸</td><td>表脸</td></tr>
+  <tr><td>表脸</td><td>表脸</td><td>表脸</td></tr>
+    <tr><td>张三</td><td>王武</td><td>赵柳</td></tr>
+  <tr><td>去你</td><td>好人</td><td>坏人</td></tr>
+  <tr><td>不着调</td><td>表脸</td><td>不要脸</td></tr>
+  <tr><td>表脸</td><td>表脸</td><td>表脸</td></tr>
+  <tr><td>表脸</td><td>表脸</td><td>表脸</td></tr>
+  <tr><td>表脸</td><td>表脸</td><td>表脸</td></tr>
+</table>
+</body>
+</html>
